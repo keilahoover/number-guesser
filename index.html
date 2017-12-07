@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+  <title>Number Guesser</title>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,700" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="number-guesser.css">
+</head>
+
+<body>
+  <header role = "banner">
+      <h1>Number<span> Guesser</span></h1>
+  </header>
+
+  <section role = "main">
+     <p>Guess a Number . . .</p> 
+    <form class = "rangeInput">
+      <label for = "minInput">Between</label>
+      <input type = "number" class = "minInput" id = "minInput" placeholder = "Minimum">
+      <label for = "maxInput">and</label>
+      <input type = "number" class = "maxInput" id = "maxInput" placeholder= "Maximum">
+      <input type = "submit" class = "submitBtn" id = "submitBtn" value = "Submit">
+    </form>
+
+  <input type =  "number" class = "userInput" id = "userInput" placeholder = "Enter your guess">
+
+  <br>
+
+    <form class = "userBtns">
+      <input class = "guessBtn" id = "guessBtn" type = "submit" value = "Guess" disabled = "true">
+      <input class = "clearBtn" id = "clearBtn" type = "submit" value = "Clear" disabled = "true">
+    </form>
+
+    <h2>Your last guess was</h2>
+    
+    <article>
+      <p><span class = "userGuess" id = "userGuess"> </span></p>
+      <h2 class = "feedback" id = "feedback"> </h2>
+    </article>
+
+    <form class = "userBtns">
+      <input class = "resetBtn" id = "resetBtn" type = "reset" value = "Reset" disabled = "true">
+    </form>
+  </section>
+
+<script type= "text/javascript" src= "script.js"> </script>
+</body>
+</html>
